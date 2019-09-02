@@ -17,6 +17,8 @@
 		25E93214231CCB4600D71B9A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93213231CCB4600D71B9A /* GradientView.swift */; };
 		25E93216231CE24600D71B9A /* ZJExploreJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93215231CE24600D71B9A /* ZJExploreJobViewController.swift */; };
 		25E93218231D03B900D71B9A /* ZJExploreJobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */; };
+		25E9321A231D19DC00D71B9A /* ZJOfferDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */; };
+		25E9321C231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9321B231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		25E93213231CCB4600D71B9A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		25E93215231CE24600D71B9A /* ZJExploreJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJExploreJobViewController.swift; sourceTree = "<group>"; };
 		25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJExploreJobTableViewCell.swift; sourceTree = "<group>"; };
+		25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJOfferDetailViewController.swift; sourceTree = "<group>"; };
+		25E9321B231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJOfferDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				25E93213231CCB4600D71B9A /* GradientView.swift */,
 				25E93215231CE24600D71B9A /* ZJExploreJobViewController.swift */,
 				25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */,
+				25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */,
+				25E9321B231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift */,
 			);
 			path = ZenjobDemo;
 			sourceTree = "<group>";
@@ -267,7 +273,9 @@
 			files = (
 				25E93216231CE24600D71B9A /* ZJExploreJobViewController.swift in Sources */,
 				25E93218231D03B900D71B9A /* ZJExploreJobTableViewCell.swift in Sources */,
+				25E9321A231D19DC00D71B9A /* ZJOfferDetailViewController.swift in Sources */,
 				25E931E8231CCA3600D71B9A /* ViewController.swift in Sources */,
+				25E9321C231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift in Sources */,
 				25E93214231CCB4600D71B9A /* GradientView.swift in Sources */,
 				25E931E6231CCA3600D71B9A /* AppDelegate.swift in Sources */,
 			);
