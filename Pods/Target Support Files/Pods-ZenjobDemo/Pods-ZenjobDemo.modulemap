@@ -1,0 +1,6 @@
+framework module Pods_ZenjobDemo {
+  umbrella header "Pods-ZenjobDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

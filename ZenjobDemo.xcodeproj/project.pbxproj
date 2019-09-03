@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DAAA7523545E774CDCC9B1B /* Pods_ZenjobDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEFB5DEFF6B1E954773D4DE /* Pods_ZenjobDemoUITests.framework */; };
+		257A73DC231D2642007FEA18 /* ZJLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73DB231D2642007FEA18 /* ZJLoginViewController.swift */; };
+		257A73DF231D28C5007FEA18 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73DE231D28C5007FEA18 /* Helpers.swift */; };
+		257A73E2231D2CED007FEA18 /* APICallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73E1231D2CED007FEA18 /* APICallManager.swift */; };
+		257A73E5231D2E19007FEA18 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73E4231D2E19007FEA18 /* LoginModel.swift */; };
+		257A73E7231D3944007FEA18 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73E6231D3944007FEA18 /* LoginService.swift */; };
+		257A73EA231D3FE1007FEA18 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73E9231D3FE1007FEA18 /* LoginPresenter.swift */; };
+		257A73EC231E4280007FEA18 /* ZJUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73EB231E4280007FEA18 /* ZJUserDefaults.swift */; };
+		257A73EE231E5C8D007FEA18 /* OffersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73ED231E5C8D007FEA18 /* OffersModel.swift */; };
+		257A73F0231E614F007FEA18 /* ExploreJobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73EF231E614F007FEA18 /* ExploreJobService.swift */; };
+		257A73F2231E64A3007FEA18 /* ExploreJobPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73F1231E64A3007FEA18 /* ExploreJobPresenter.swift */; };
 		25E931E6231CCA3600D71B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E931E5231CCA3600D71B9A /* AppDelegate.swift */; };
-		25E931E8231CCA3600D71B9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E931E7231CCA3600D71B9A /* ViewController.swift */; };
 		25E931EB231CCA3600D71B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E931E9231CCA3600D71B9A /* Main.storyboard */; };
 		25E931ED231CCA3700D71B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25E931EC231CCA3700D71B9A /* Assets.xcassets */; };
 		25E931F0231CCA3700D71B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E931EE231CCA3700D71B9A /* LaunchScreen.storyboard */; };
@@ -19,6 +29,8 @@
 		25E93218231D03B900D71B9A /* ZJExploreJobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */; };
 		25E9321A231D19DC00D71B9A /* ZJOfferDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */; };
 		25E9321C231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9321B231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift */; };
+		6527E7DB30B412F408A3F9B5 /* Pods_ZenjobDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC40B5F35C0402640467AB5 /* Pods_ZenjobDemo.framework */; };
+		BDDBDD3F9B90E6942E264282 /* Pods_ZenjobDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D957A5641946884664502B9F /* Pods_ZenjobDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +51,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		257A73DB231D2642007FEA18 /* ZJLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJLoginViewController.swift; sourceTree = "<group>"; };
+		257A73DE231D28C5007FEA18 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		257A73E1231D2CED007FEA18 /* APICallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallManager.swift; sourceTree = "<group>"; };
+		257A73E4231D2E19007FEA18 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		257A73E6231D3944007FEA18 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		257A73E9231D3FE1007FEA18 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		257A73EB231E4280007FEA18 /* ZJUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJUserDefaults.swift; sourceTree = "<group>"; };
+		257A73ED231E5C8D007FEA18 /* OffersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersModel.swift; sourceTree = "<group>"; };
+		257A73EF231E614F007FEA18 /* ExploreJobService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreJobService.swift; sourceTree = "<group>"; };
+		257A73F1231E64A3007FEA18 /* ExploreJobPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreJobPresenter.swift; sourceTree = "<group>"; };
 		25E931E2231CCA3600D71B9A /* ZenjobDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenjobDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E931E5231CCA3600D71B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25E931E7231CCA3600D71B9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25E931EA231CCA3600D71B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25E931EC231CCA3700D71B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25E931EF231CCA3700D71B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +78,15 @@
 		25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJExploreJobTableViewCell.swift; sourceTree = "<group>"; };
 		25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJOfferDetailViewController.swift; sourceTree = "<group>"; };
 		25E9321B231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJOfferDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		6DEFB5DEFF6B1E954773D4DE /* Pods_ZenjobDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZenjobDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC40B5F35C0402640467AB5 /* Pods_ZenjobDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZenjobDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEAB94D5B9FC426B8FE508D /* Pods-ZenjobDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenjobDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZenjobDemoTests/Pods-ZenjobDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B601E54F248F61874011238E /* Pods-ZenjobDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenjobDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZenjobDemo/Pods-ZenjobDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B8CCAB461E289E934D18A379 /* Pods-ZenjobDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenjobDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZenjobDemoUITests/Pods-ZenjobDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D957A5641946884664502B9F /* Pods_ZenjobDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZenjobDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED43E435D60B45D378DD247 /* Pods-ZenjobDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenjobDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZenjobDemo/Pods-ZenjobDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6FAF9048089358B3C25D6B /* Pods-ZenjobDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenjobDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZenjobDemoUITests/Pods-ZenjobDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EE6AB9A99A38FD97050D26D3 /* Pods-ZenjobDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZenjobDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZenjobDemoTests/Pods-ZenjobDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6527E7DB30B412F408A3F9B5 /* Pods_ZenjobDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDBDD3F9B90E6942E264282 /* Pods_ZenjobDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +110,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DAAA7523545E774CDCC9B1B /* Pods_ZenjobDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257A73DD231D28AB007FEA18 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				257A73DE231D28C5007FEA18 /* Helpers.swift */,
+				257A73EB231E4280007FEA18 /* ZJUserDefaults.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		257A73E0231D2CD6007FEA18 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				257A73E1231D2CED007FEA18 /* APICallManager.swift */,
+				257A73E6231D3944007FEA18 /* LoginService.swift */,
+				257A73EF231E614F007FEA18 /* ExploreJobService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		257A73E3231D2E00007FEA18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				257A73E4231D2E19007FEA18 /* LoginModel.swift */,
+				257A73ED231E5C8D007FEA18 /* OffersModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		257A73E8231D3FBA007FEA18 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				257A73E9231D3FE1007FEA18 /* LoginPresenter.swift */,
+				257A73F1231E64A3007FEA18 /* ExploreJobPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		25E931D9231CCA3600D71B9A = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +161,8 @@
 				25E931F9231CCA3700D71B9A /* ZenjobDemoTests */,
 				25E93204231CCA3700D71B9A /* ZenjobDemoUITests */,
 				25E931E3231CCA3600D71B9A /* Products */,
+				6EAB4C411BCAC25839479B8D /* Pods */,
+				92B37C22CB1F01DA0C2D639E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,8 +179,11 @@
 		25E931E4231CCA3600D71B9A /* ZenjobDemo */ = {
 			isa = PBXGroup;
 			children = (
+				257A73E8231D3FBA007FEA18 /* Presenter */,
+				257A73E3231D2E00007FEA18 /* Models */,
+				257A73E0231D2CD6007FEA18 /* API */,
+				257A73DD231D28AB007FEA18 /* Helper */,
 				25E931E5231CCA3600D71B9A /* AppDelegate.swift */,
-				25E931E7231CCA3600D71B9A /* ViewController.swift */,
 				25E931E9231CCA3600D71B9A /* Main.storyboard */,
 				25E931EC231CCA3700D71B9A /* Assets.xcassets */,
 				25E931EE231CCA3700D71B9A /* LaunchScreen.storyboard */,
@@ -118,6 +193,7 @@
 				25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */,
 				25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */,
 				25E9321B231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift */,
+				257A73DB231D2642007FEA18 /* ZJLoginViewController.swift */,
 			);
 			path = ZenjobDemo;
 			sourceTree = "<group>";
@@ -140,6 +216,29 @@
 			path = ZenjobDemoUITests;
 			sourceTree = "<group>";
 		};
+		6EAB4C411BCAC25839479B8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DED43E435D60B45D378DD247 /* Pods-ZenjobDemo.debug.xcconfig */,
+				B601E54F248F61874011238E /* Pods-ZenjobDemo.release.xcconfig */,
+				EE6AB9A99A38FD97050D26D3 /* Pods-ZenjobDemoTests.debug.xcconfig */,
+				9EEAB94D5B9FC426B8FE508D /* Pods-ZenjobDemoTests.release.xcconfig */,
+				B8CCAB461E289E934D18A379 /* Pods-ZenjobDemoUITests.debug.xcconfig */,
+				EB6FAF9048089358B3C25D6B /* Pods-ZenjobDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92B37C22CB1F01DA0C2D639E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BC40B5F35C0402640467AB5 /* Pods_ZenjobDemo.framework */,
+				D957A5641946884664502B9F /* Pods_ZenjobDemoTests.framework */,
+				6DEFB5DEFF6B1E954773D4DE /* Pods_ZenjobDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25E9320A231CCA3700D71B9A /* Build configuration list for PBXNativeTarget "ZenjobDemo" */;
 			buildPhases = (
+				C5EDE533A7999D15BD25EAAD /* [CP] Check Pods Manifest.lock */,
 				25E931DE231CCA3600D71B9A /* Sources */,
 				25E931DF231CCA3600D71B9A /* Frameworks */,
 				25E931E0231CCA3600D71B9A /* Resources */,
+				C985660F2722FF64DB9F4DE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25E9320D231CCA3700D71B9A /* Build configuration list for PBXNativeTarget "ZenjobDemoTests" */;
 			buildPhases = (
+				29D00A34E16171132DC07ADF /* [CP] Check Pods Manifest.lock */,
 				25E931F2231CCA3700D71B9A /* Sources */,
 				25E931F3231CCA3700D71B9A /* Frameworks */,
 				25E931F4231CCA3700D71B9A /* Resources */,
@@ -182,6 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25E93210231CCA3700D71B9A /* Build configuration list for PBXNativeTarget "ZenjobDemoUITests" */;
 			buildPhases = (
+				A8B409E8BA0E09EC80860D42 /* [CP] Check Pods Manifest.lock */,
 				25E931FD231CCA3700D71B9A /* Sources */,
 				25E931FE231CCA3700D71B9A /* Frameworks */,
 				25E931FF231CCA3700D71B9A /* Resources */,
@@ -266,18 +369,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29D00A34E16171132DC07ADF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZenjobDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B409E8BA0E09EC80860D42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZenjobDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5EDE533A7999D15BD25EAAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZenjobDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C985660F2722FF64DB9F4DE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZenjobDemo/Pods-ZenjobDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DCToastView/DCToastView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TableviewPaginator/TableviewPaginator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DCToastView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TableviewPaginator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZenjobDemo/Pods-ZenjobDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		25E931DE231CCA3600D71B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257A73EE231E5C8D007FEA18 /* OffersModel.swift in Sources */,
+				257A73EA231D3FE1007FEA18 /* LoginPresenter.swift in Sources */,
+				257A73F0231E614F007FEA18 /* ExploreJobService.swift in Sources */,
 				25E93216231CE24600D71B9A /* ZJExploreJobViewController.swift in Sources */,
 				25E93218231D03B900D71B9A /* ZJExploreJobTableViewCell.swift in Sources */,
+				257A73DC231D2642007FEA18 /* ZJLoginViewController.swift in Sources */,
+				257A73F2231E64A3007FEA18 /* ExploreJobPresenter.swift in Sources */,
 				25E9321A231D19DC00D71B9A /* ZJOfferDetailViewController.swift in Sources */,
-				25E931E8231CCA3600D71B9A /* ViewController.swift in Sources */,
+				257A73E2231D2CED007FEA18 /* APICallManager.swift in Sources */,
+				257A73E5231D2E19007FEA18 /* LoginModel.swift in Sources */,
+				257A73E7231D3944007FEA18 /* LoginService.swift in Sources */,
+				257A73DF231D28C5007FEA18 /* Helpers.swift in Sources */,
 				25E9321C231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift in Sources */,
 				25E93214231CCB4600D71B9A /* GradientView.swift in Sources */,
 				25E931E6231CCA3600D71B9A /* AppDelegate.swift in Sources */,
+				257A73EC231E4280007FEA18 /* ZJUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +659,7 @@
 		};
 		25E9320B231CCA3700D71B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED43E435D60B45D378DD247 /* Pods-ZenjobDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +678,7 @@
 		};
 		25E9320C231CCA3700D71B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B601E54F248F61874011238E /* Pods-ZenjobDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +697,7 @@
 		};
 		25E9320E231CCA3700D71B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE6AB9A99A38FD97050D26D3 /* Pods-ZenjobDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +718,7 @@
 		};
 		25E9320F231CCA3700D71B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EEAB94D5B9FC426B8FE508D /* Pods-ZenjobDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +739,7 @@
 		};
 		25E93211231CCA3700D71B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8CCAB461E289E934D18A379 /* Pods-ZenjobDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -545,6 +759,7 @@
 		};
 		25E93212231CCA3700D71B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6FAF9048089358B3C25D6B /* Pods-ZenjobDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

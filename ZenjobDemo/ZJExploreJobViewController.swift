@@ -12,6 +12,7 @@ class ZJExploreJobViewController: UIViewController {
 
     
     @IBOutlet weak var offersTableView: UITableView!
+    let presenter = ExploreJobPresenter(exploreJobService: ExploreJobService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,36 @@ class ZJExploreJobViewController: UIViewController {
     func uiConfiguration(){
         offersTableView.delegate = self
         offersTableView.dataSource = self
+        presenter.attachView(view: self)
+        presenter.getOffersListAPI(offset: "0")
     }
 }
+
+//MARK: - Protocols Implementation
+extension ZJExploreJobViewController: ExploreJobView {
+    
+    func offersListSuccess(users: OffersModel){
+//        if let token = users.access_token{
+//            ZJUserDefaults.accessToken = token
+//            performSegue(withIdentifier: Helpers.ZJDashboardSegue, sender: self)
+//        }
+    }
+    
+    func startLoading() {
+        // Show your loader
+       // activityIndicator?.startAnimating()
+    }
+    
+    func finishLoading() {
+        // Dismiss your loader
+       // activityIndicator?.stopAnimating()
+    }
+    
+    func showError(errorMessage: String){
+        Helpers.showToast(controller: self, message: errorMessage)
+    }
+}
+
 
 //MARK: - UITableView Delegates & DataSoruce
 extension ZJExploreJobViewController: UITableViewDataSource,UITableViewDelegate {

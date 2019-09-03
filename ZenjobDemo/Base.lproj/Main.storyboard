@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MAX-FF-wXZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZenjobDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ZJLoginViewController" customModule="ZenjobDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,6 +45,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OxA-Xb-SYQ"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,6 +77,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2yv-j6-bPt"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,25 +115,35 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r28-cn-Htc">
-                                        <rect key="frame" x="30" y="361" width="260" height="30"/>
+                                        <rect key="frame" x="30" y="361" width="260" height="40"/>
                                         <color key="backgroundColor" red="0.27843137254901962" green="0.10980392156862745" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="8nm-xm-fkH"/>
-                                            <constraint firstAttribute="height" constant="30" id="ctv-dn-WJW"/>
+                                            <constraint firstAttribute="height" constant="40" id="ctv-dn-WJW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <state key="normal" title="Einloggen">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="P54-DP-CgN" kind="show" id="Jo6-u4-TKW"/>
+                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyr-P9-pFU"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pXA-h9-DKK">
+                                        <rect key="frame" x="150" y="274" width="20" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Vqs-cu-Gcz"/>
+                                            <constraint firstAttribute="width" constant="20" id="dNz-BB-aOL"/>
+                                        </constraints>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="r28-cn-Htc" firstAttribute="centerX" secondItem="j4i-0Y-Ua3" secondAttribute="centerX" id="6ae-S3-5Fh"/>
                                     <constraint firstItem="r28-cn-Htc" firstAttribute="top" secondItem="UjF-dY-mRV" secondAttribute="bottom" id="JhH-5u-5hS"/>
+                                    <constraint firstItem="pXA-h9-DKK" firstAttribute="centerX" secondItem="j4i-0Y-Ua3" secondAttribute="centerX" id="PVR-Te-ZKy"/>
+                                    <constraint firstItem="pXA-h9-DKK" firstAttribute="centerY" secondItem="j4i-0Y-Ua3" secondAttribute="centerY" id="azG-cj-5dL"/>
                                     <constraint firstItem="UjF-dY-mRV" firstAttribute="centerX" secondItem="j4i-0Y-Ua3" secondAttribute="centerX" id="cYs-eP-kaH"/>
                                     <constraint firstItem="UjF-dY-mRV" firstAttribute="centerY" secondItem="j4i-0Y-Ua3" secondAttribute="centerY" id="h5F-Z0-TBd"/>
                                 </constraints>
@@ -152,10 +168,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="pXA-h9-DKK" id="8tp-X7-a4Y"/>
+                        <outlet property="passwordTextField" destination="f8s-am-RR1" id="5bf-Fb-W6g"/>
+                        <outlet property="userNameTextField" destination="rdH-D9-Zyu" id="NnR-y1-6i6"/>
+                        <segue destination="P54-DP-CgN" kind="show" identifier="ZJDashboardSegue" id="x91-Pl-aDE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1434" y="-680"/>
+            <point key="canvasLocation" x="-1434.375" y="-680.28169014084506"/>
         </scene>
         <!--Task-->
         <scene sceneID="FYR-VI-lPa">
