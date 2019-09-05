@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LoginModel {
+struct LoginModel {
     var username: String?
     var token_type: String?
     var access_token: String?
@@ -16,9 +16,7 @@ class LoginModel {
     var refresh_token: String?
     var roles: [String] = []
     
-    
-    // MARK: Instance Method
-    func loadFromDictionary(_ dict: [String: AnyObject]) {
+    mutating func loadFromDictionary(_ dict: [String: AnyObject]) {
         if let username = dict["username"] as? String {
             self.username = username
         }
@@ -42,11 +40,9 @@ class LoginModel {
             }
         }
     }
-
     
-    // MARK: Class Method
-    class func build(_ dict: [String: AnyObject]) -> LoginModel {
-        let user = LoginModel()
+    static func build(_ dict: [String: AnyObject]) -> LoginModel {
+        var user = LoginModel()
         user.loadFromDictionary(dict)
         return user
     }

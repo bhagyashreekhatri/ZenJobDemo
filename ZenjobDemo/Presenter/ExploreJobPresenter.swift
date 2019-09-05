@@ -12,7 +12,8 @@ protocol ExploreJobView: NSObjectProtocol {
     func startLoading()
     func finishLoading()
     func showError(errorMessage: String)
-    func offersListSuccess(users: OffersModel)
+    func offersListSuccess(offers: OffersModel)
+    func offerDetailsSuccess(offer: OfferList)
 }
 
 class ExploreJobPresenter {
@@ -32,20 +33,35 @@ class ExploreJobPresenter {
     }
     
     func getOffersListAPI(offset:String) {
-        self.exploreJobView?.startLoading()
         exploreJobService.callAPIGetOffers(offset:offset,
-                                      onSuccess: { (user) in
+                                      onSuccess: { (offer) in
                                         DispatchQueue.main.async {
-                                            self.exploreJobView?.finishLoading()
-                                            self.exploreJobView?.offersListSuccess(users: user)
+                                            self.exploreJobView?.offersListSuccess(offers: offer)
                                         }
+                                        
         },
                                       onFailure: { (errorMessage) in
                                         DispatchQueue.main.async {
-                                            self.exploreJobView?.finishLoading()
                                             self.exploreJobView?.showError(errorMessage: errorMessage)
                                         }
-        }
-        )
+        })
+    }
+    
+    func getOffersDetailAPI(id:String) {
+        self.exploreJobView?.startLoading()
+        exploreJobService.callAPIGetOfferDetails(id:id,
+                                           onSuccess: {(offer) in
+                                            DispatchQueue.main.async {
+                                                self.exploreJobView?.finishLoading()
+                                                self.exploreJobView?.offerDetailsSuccess(offer: offer)
+                                            }
+                                            
+        },
+                                           onFailure: { (errorMessage) in
+                                            DispatchQueue.main.async {
+                                                self.exploreJobView?.finishLoading()
+                                                self.exploreJobView?.showError(errorMessage: errorMessage)
+                                            }
+        })
     }
 }

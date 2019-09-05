@@ -45,7 +45,6 @@ class LoginPresenter {
                     self.loginView?.finishLoading()
                     self.loginView?.showError(errorMessage: errorMessage)
                 }
-        }
-        )
+        })
     }
 }

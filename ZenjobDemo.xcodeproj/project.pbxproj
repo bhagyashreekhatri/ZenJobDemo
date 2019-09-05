@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0DAAA7523545E774CDCC9B1B /* Pods_ZenjobDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEFB5DEFF6B1E954773D4DE /* Pods_ZenjobDemoUITests.framework */; };
+		254618082320A3B500D689D1 /* ZJUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254618072320A3B500D689D1 /* ZJUtils.swift */; };
+		2546180A2320ACAD00D689D1 /* ZJGehaltTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254618092320ACAD00D689D1 /* ZJGehaltTableViewCell.swift */; };
+		2546180C2320DE4900D689D1 /* ZJShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546180B2320DE4900D689D1 /* ZJShadowView.swift */; };
+		2546180E2320E30C00D689D1 /* ZJShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546180D2320E30C00D689D1 /* ZJShadowButton.swift */; };
 		257A73DC231D2642007FEA18 /* ZJLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73DB231D2642007FEA18 /* ZJLoginViewController.swift */; };
-		257A73DF231D28C5007FEA18 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73DE231D28C5007FEA18 /* Helpers.swift */; };
+		257A73DF231D28C5007FEA18 /* ZJHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73DE231D28C5007FEA18 /* ZJHelpers.swift */; };
 		257A73E2231D2CED007FEA18 /* APICallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73E1231D2CED007FEA18 /* APICallManager.swift */; };
 		257A73E5231D2E19007FEA18 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73E4231D2E19007FEA18 /* LoginModel.swift */; };
 		257A73E7231D3944007FEA18 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73E6231D3944007FEA18 /* LoginService.swift */; };
@@ -18,13 +22,14 @@
 		257A73EE231E5C8D007FEA18 /* OffersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73ED231E5C8D007FEA18 /* OffersModel.swift */; };
 		257A73F0231E614F007FEA18 /* ExploreJobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73EF231E614F007FEA18 /* ExploreJobService.swift */; };
 		257A73F2231E64A3007FEA18 /* ExploreJobPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73F1231E64A3007FEA18 /* ExploreJobPresenter.swift */; };
+		257A73F4231E756F007FEA18 /* ZJLoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A73F3231E756F007FEA18 /* ZJLoadMoreTableViewCell.swift */; };
 		25E931E6231CCA3600D71B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E931E5231CCA3600D71B9A /* AppDelegate.swift */; };
 		25E931EB231CCA3600D71B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E931E9231CCA3600D71B9A /* Main.storyboard */; };
 		25E931ED231CCA3700D71B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25E931EC231CCA3700D71B9A /* Assets.xcassets */; };
 		25E931F0231CCA3700D71B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E931EE231CCA3700D71B9A /* LaunchScreen.storyboard */; };
 		25E931FB231CCA3700D71B9A /* ZenjobDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E931FA231CCA3700D71B9A /* ZenjobDemoTests.swift */; };
 		25E93206231CCA3700D71B9A /* ZenjobDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93205231CCA3700D71B9A /* ZenjobDemoUITests.swift */; };
-		25E93214231CCB4600D71B9A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93213231CCB4600D71B9A /* GradientView.swift */; };
+		25E93214231CCB4600D71B9A /* ZJGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93213231CCB4600D71B9A /* ZJGradientView.swift */; };
 		25E93216231CE24600D71B9A /* ZJExploreJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93215231CE24600D71B9A /* ZJExploreJobViewController.swift */; };
 		25E93218231D03B900D71B9A /* ZJExploreJobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */; };
 		25E9321A231D19DC00D71B9A /* ZJOfferDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */; };
@@ -51,8 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		254618072320A3B500D689D1 /* ZJUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJUtils.swift; sourceTree = "<group>"; };
+		254618092320ACAD00D689D1 /* ZJGehaltTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJGehaltTableViewCell.swift; sourceTree = "<group>"; };
+		2546180B2320DE4900D689D1 /* ZJShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJShadowView.swift; sourceTree = "<group>"; };
+		2546180D2320E30C00D689D1 /* ZJShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJShadowButton.swift; sourceTree = "<group>"; };
 		257A73DB231D2642007FEA18 /* ZJLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJLoginViewController.swift; sourceTree = "<group>"; };
-		257A73DE231D28C5007FEA18 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		257A73DE231D28C5007FEA18 /* ZJHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJHelpers.swift; sourceTree = "<group>"; };
 		257A73E1231D2CED007FEA18 /* APICallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallManager.swift; sourceTree = "<group>"; };
 		257A73E4231D2E19007FEA18 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		257A73E6231D3944007FEA18 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -61,6 +70,7 @@
 		257A73ED231E5C8D007FEA18 /* OffersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersModel.swift; sourceTree = "<group>"; };
 		257A73EF231E614F007FEA18 /* ExploreJobService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreJobService.swift; sourceTree = "<group>"; };
 		257A73F1231E64A3007FEA18 /* ExploreJobPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreJobPresenter.swift; sourceTree = "<group>"; };
+		257A73F3231E756F007FEA18 /* ZJLoadMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJLoadMoreTableViewCell.swift; sourceTree = "<group>"; };
 		25E931E2231CCA3600D71B9A /* ZenjobDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenjobDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E931E5231CCA3600D71B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25E931EA231CCA3600D71B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,7 +83,7 @@
 		25E93201231CCA3700D71B9A /* ZenjobDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenjobDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E93205231CCA3700D71B9A /* ZenjobDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenjobDemoUITests.swift; sourceTree = "<group>"; };
 		25E93207231CCA3700D71B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25E93213231CCB4600D71B9A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		25E93213231CCB4600D71B9A /* ZJGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJGradientView.swift; sourceTree = "<group>"; };
 		25E93215231CE24600D71B9A /* ZJExploreJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJExploreJobViewController.swift; sourceTree = "<group>"; };
 		25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJExploreJobTableViewCell.swift; sourceTree = "<group>"; };
 		25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJOfferDetailViewController.swift; sourceTree = "<group>"; };
@@ -117,11 +127,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2546180F2321100300D689D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				254618122321101A00D689D1 /* Details */,
+				254618112321101300D689D1 /* Dashboard */,
+				254618102321100C00D689D1 /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		254618102321100C00D689D1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				257A73DB231D2642007FEA18 /* ZJLoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		254618112321101300D689D1 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				254618152321105B00D689D1 /* TableViewCell */,
+				25E93215231CE24600D71B9A /* ZJExploreJobViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		254618122321101A00D689D1 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				254618142321104600D689D1 /* TableViewCell */,
+				254618132321103700D689D1 /* CollectionViewCell */,
+				25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		254618132321103700D689D1 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				25E9321B231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		254618142321104600D689D1 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				254618092320ACAD00D689D1 /* ZJGehaltTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		254618152321105B00D689D1 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				257A73F3231E756F007FEA18 /* ZJLoadMoreTableViewCell.swift */,
+				25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		257A73DD231D28AB007FEA18 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				257A73DE231D28C5007FEA18 /* Helpers.swift */,
+				257A73DE231D28C5007FEA18 /* ZJHelpers.swift */,
 				257A73EB231E4280007FEA18 /* ZJUserDefaults.swift */,
+				254618072320A3B500D689D1 /* ZJUtils.swift */,
+				2546180B2320DE4900D689D1 /* ZJShadowView.swift */,
+				2546180D2320E30C00D689D1 /* ZJShadowButton.swift */,
+				25E93213231CCB4600D71B9A /* ZJGradientView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -179,6 +255,7 @@
 		25E931E4231CCA3600D71B9A /* ZenjobDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2546180F2321100300D689D1 /* Controllers */,
 				257A73E8231D3FBA007FEA18 /* Presenter */,
 				257A73E3231D2E00007FEA18 /* Models */,
 				257A73E0231D2CD6007FEA18 /* API */,
@@ -188,12 +265,6 @@
 				25E931EC231CCA3700D71B9A /* Assets.xcassets */,
 				25E931EE231CCA3700D71B9A /* LaunchScreen.storyboard */,
 				25E931F1231CCA3700D71B9A /* Info.plist */,
-				25E93213231CCB4600D71B9A /* GradientView.swift */,
-				25E93215231CE24600D71B9A /* ZJExploreJobViewController.swift */,
-				25E93217231D03B900D71B9A /* ZJExploreJobTableViewCell.swift */,
-				25E93219231D19DC00D71B9A /* ZJOfferDetailViewController.swift */,
-				25E9321B231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift */,
-				257A73DB231D2642007FEA18 /* ZJLoginViewController.swift */,
 			);
 			path = ZenjobDemo;
 			sourceTree = "<group>";
@@ -477,15 +548,20 @@
 				25E93216231CE24600D71B9A /* ZJExploreJobViewController.swift in Sources */,
 				25E93218231D03B900D71B9A /* ZJExploreJobTableViewCell.swift in Sources */,
 				257A73DC231D2642007FEA18 /* ZJLoginViewController.swift in Sources */,
+				2546180E2320E30C00D689D1 /* ZJShadowButton.swift in Sources */,
+				254618082320A3B500D689D1 /* ZJUtils.swift in Sources */,
 				257A73F2231E64A3007FEA18 /* ExploreJobPresenter.swift in Sources */,
 				25E9321A231D19DC00D71B9A /* ZJOfferDetailViewController.swift in Sources */,
 				257A73E2231D2CED007FEA18 /* APICallManager.swift in Sources */,
 				257A73E5231D2E19007FEA18 /* LoginModel.swift in Sources */,
+				257A73F4231E756F007FEA18 /* ZJLoadMoreTableViewCell.swift in Sources */,
 				257A73E7231D3944007FEA18 /* LoginService.swift in Sources */,
-				257A73DF231D28C5007FEA18 /* Helpers.swift in Sources */,
+				2546180A2320ACAD00D689D1 /* ZJGehaltTableViewCell.swift in Sources */,
+				257A73DF231D28C5007FEA18 /* ZJHelpers.swift in Sources */,
 				25E9321C231D19F500D71B9A /* ZJOfferDetailCollectionViewCell.swift in Sources */,
-				25E93214231CCB4600D71B9A /* GradientView.swift in Sources */,
+				25E93214231CCB4600D71B9A /* ZJGradientView.swift in Sources */,
 				25E931E6231CCA3600D71B9A /* AppDelegate.swift in Sources */,
+				2546180C2320DE4900D689D1 /* ZJShadowView.swift in Sources */,
 				257A73EC231E4280007FEA18 /* ZJUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

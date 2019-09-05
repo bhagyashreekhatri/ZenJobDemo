@@ -1,17 +1,19 @@
 //
-//  ZJExploreJobTableViewCell.swift
+//  ZJGehaltTableViewCell.swift
 //  ZenjobDemo
 //
-//  Created by Bhagyashree Haresh Khatri on 02/09/2019.
+//  Created by Bhagyashree Haresh Khatri on 05/09/2019.
 //  Copyright © 2019 Bhagyashree Haresh Khatri. All rights reserved.
 //
 
 import UIKit
 
-class ZJExploreJobTableViewCell: UITableViewCell {
+class ZJGehaltTableViewCell: UITableViewCell {
+
     
-   
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

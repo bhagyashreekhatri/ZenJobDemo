@@ -8,15 +8,15 @@
 
 import Foundation
 
-class OffersModel {
-    var offset: Int?
-    var max: Int?
-    var total: Int?
-    var newestTimestamp: Int?
-    var offersList          : [OffersList] = []
+struct OffersModel {
+    var offset            : Int?
+    var max               : Int?
+    var total             : Int?
+    var newestTimestamp   : Int?
+    var offerList        : [OfferList] = []
     
-    // MARK: Instance Method
-    func loadFromDictionary(_ dict: [String: AnyObject]) {
+    
+    mutating func loadFromDictionary(_ dict: [String: AnyObject]) {
         if let offset = dict["offset"] as? Int {
             self.offset = offset
         }
@@ -30,44 +30,43 @@ class OffersModel {
             self.newestTimestamp = newestTimestamp
         }
         
-        if let cardList = dict["offers"] as? NSArray {
-            for cardItem in cardList {
-                var voucherData: OffersList = OffersList()
-                voucherData.loadOffersFromDictionary(cardItem as! [String : AnyObject])
-                offersList.append(voucherData)
+        if let offersList = dict["offers"] as? NSArray {
+            for offer in offersList {
+                var offerData: OfferList = OfferList()
+                offerData.loadOffersFromDictionary(offer as! [String : AnyObject])
+                self.offerList.append(offerData)
             }
         }
     }
     
     
-    // MARK: Class Method
-    class func build(_ dict: [String: AnyObject]) -> OffersModel {
-        let user = OffersModel()
-        user.loadFromDictionary(dict)
-        return user
+    static func build(_ dict: [String: AnyObject]) -> OffersModel {
+        var offers = OffersModel()
+        offers.loadFromDictionary(dict)
+        return offers
     }
     
 }
 
-struct OffersList {
-    var id: String?
-    var jobMatchUuid: String?
-    var jobCategoryKey: String?
-    var title: String?
-    var description: String?
-    var instructions: String?
-    var companyName: String?
-    var companyLogoUrl: String?
-    var minutesSum: String?
-    var hourSum: String?
-    var earningTotal: String?
-    var earningHourly: String?
-    var breakTypeList          : [BreakType] = []
-    var shiftsList             : [Shifts] = []
-    var pricingTableList       : [PricingTables] = []
-    var locationDict           : [Location] = [Location]()
+struct OfferList {
+    var id                   : String?
+    var jobMatchUuid         : String?
+    var jobCategoryKey       : String?
+    var title                : String?
+    var description          : String?
+    var instructions         : String?
+    var companyName          : String?
+    var companyLogoUrl       : String?
+    var minutesSum           : String?
+    var hourSum              : String?
+    var earningTotal         : String?
+    var earningHourly        : String?
+    var breakTypeList        : [BreakType] = []
+    var shiftsList           : [Shifts] = []
+    var pricingTableList     : [PricingTables] = []
+    var locationDict         : [Location] = [Location]()
     
-    // MARK: Instance Method
+    
     mutating func loadOffersFromDictionary(_ dict: [String: AnyObject]) {
         if let id = dict["id"] as? String {
             self.id = id
@@ -133,14 +132,18 @@ struct OffersList {
             }
         }
     }
+    
+    static func build(_ dict: [String: AnyObject]) -> OfferList {
+        var offerslist = OfferList()
+        offerslist.loadOffersFromDictionary(dict)
+        return offerslist
+    }
 }
 
 struct BreakType {
-    var minutes: Int?
-    var description: String?
+    var minutes     : Int?
+    var description : String?
     
-    
-    // MARK: Instance Method
     mutating func loadBreakTypeFromDictionary(_ dict: [String: AnyObject]) {
         if let minutes = dict["minutes"] as? Int {
             self.minutes = minutes
@@ -152,12 +155,10 @@ struct BreakType {
 }
 
 struct Shifts {
-    var beginDate: String?
-    var endDate: String?
-    var breakTypes: Int?
+    var beginDate   : String?
+    var endDate     : String?
+    var breakTypes  : Int?
     
-    
-    // MARK: Instance Method
     mutating func loadShiftsFromDictionary(_ dict: [String: AnyObject]) {
         if let beginDate = dict["beginDate"] as? String {
             self.beginDate = beginDate
@@ -172,16 +173,14 @@ struct Shifts {
 }
 
 struct PricingTables {
-    var isSummary: Bool?
-    var times: String?
-    var minutes: Int?
-    var name: String?
-    var unpaid: Bool?
-    var earningHourly: String?
-    var earningTotal: String?
+    var isSummary       : Bool?
+    var times           : String?
+    var minutes         : Int?
+    var name            : String?
+    var unpaid          : Bool?
+    var earningHourly   : String?
+    var earningTotal    : String?
     
-    
-    // MARK: Instance Method
     mutating func loadPricingTableFromDictionary(_ dict: [String: AnyObject]) {
         if let isSummary = dict["isSummary"] as? Bool {
             self.isSummary = isSummary
@@ -208,20 +207,18 @@ struct PricingTables {
 }
 
 struct Location {
-    var locationName: String?
-    var locationDisplayName: String?
-    var street: String?
-    var streetNumber: String?
-    var supplementary: String?
-    var postalCode: String?
-    var city: String?
-    var district: String?
-    var locationSearchString: String?
-    var locationLongitude: Double?
-    var locationLatitude: Double?
+    var locationName            : String?
+    var locationDisplayName     : String?
+    var street                  : String?
+    var streetNumber            : String?
+    var supplementary           : String?
+    var postalCode              : String?
+    var city                    : String?
+    var district                : String?
+    var locationSearchString    : String?
+    var locationLongitude       : Double?
+    var locationLatitude        : Double?
     
-    
-    // MARK: Instance Method
     mutating func loadLocationFromDictionary(_ dict: [String: AnyObject]) {
         if let locationName = dict["locationName"] as? String {
             self.locationName = locationName
@@ -258,12 +255,10 @@ struct Location {
         }
     }
     
-    
-    // MARK: Class Method
     mutating func build(_ dict: [String: AnyObject]) -> Location {
-        var user = Location()
-        user.loadLocationFromDictionary(dict)
-        return user
+        var location = Location()
+        location.loadLocationFromDictionary(dict)
+        return location
     }
     
 }

@@ -10,4 +10,13 @@ import UIKit
 
 class ZJOfferDetailCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var dayShiftLabel: UILabel!
+    @IBOutlet weak var dateshiftLabel: UILabel!
+    @IBOutlet weak var timeShiftLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+        
+    }
 }

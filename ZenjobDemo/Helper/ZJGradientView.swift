@@ -1,5 +1,5 @@
 //
-//  Colors.swift
+//  ZJGradientView.swift
 //  ZenjobDemo
 //
 //  Created by Bhagyashree Haresh Khatri on 02/09/2019.
@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class GradientView: UIView {
+class ZJGradientView: UIView {
     
     @IBInspectable var startColor:   UIColor = .black { didSet { updateColors() }}
     @IBInspectable var endColor:     UIColor = .white { didSet { updateColors() }}

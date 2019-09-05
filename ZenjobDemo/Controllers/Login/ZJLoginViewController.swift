@@ -23,6 +23,7 @@ class ZJLoginViewController: UIViewController {
         uiConfiguration()
     }
     
+    //MARK: Set Up UI
     func uiConfiguration(){
         userNameTextField.delegate = self
         passwordTextField.delegate = self
@@ -30,6 +31,7 @@ class ZJLoginViewController: UIViewController {
         presenter.attachView(view: self)
     }
     
+    //MARK: Validation
     func loginValidations(){
         if let name = username,name.isEmpty{
             showError(errorMessage: "Enter User Name")
@@ -44,6 +46,7 @@ class ZJLoginViewController: UIViewController {
         }
     }
     
+    //MARK: IBActions
     @IBAction func loginAction(_ sender: UIButton) {
          loginValidations()
     }
@@ -55,7 +58,10 @@ extension ZJLoginViewController: LoginView {
     func loginSuccess(users: LoginModel){
         if let token = users.access_token{
             ZJUserDefaults.accessToken = token
-            performSegue(withIdentifier: Helpers.ZJDashboardSegue, sender: self)
+            performSegue(withIdentifier: ZJHelpers.ZJDashboardSegue, sender: self)
+        }
+        else{
+            ZJHelpers.showToast(controller: self, message: "Something went wrong!!")
         }
     }
     
@@ -70,11 +76,11 @@ extension ZJLoginViewController: LoginView {
     }
     
     func showError(errorMessage: String){
-        Helpers.showToast(controller: self, message: errorMessage)
+        ZJHelpers.showToast(controller: self, message: errorMessage)
     }
 }
 
-
+//MARK: - UITextField Delegates
 extension ZJLoginViewController:UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if let name = userNameTextField.text{
