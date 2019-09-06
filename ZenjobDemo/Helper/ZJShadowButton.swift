@@ -12,8 +12,7 @@ import UIKit
 class ZJShadowButton: UIButton {
     
     /* The view radius. Defaults to 0. Animatable. */
-    @IBInspectable
-    public var cornerRadius: CGFloat {
+    @IBInspectable open var cornerRadius: CGFloat {
         set {
             layer.cornerRadius = newValue
             layer.masksToBounds = true
@@ -25,7 +24,7 @@ class ZJShadowButton: UIButton {
     }
     
     /* The view border color. Defaults to opaque black. Animatable. */
-    @IBInspectable public var borderColor: UIColor? {
+    @IBInspectable open var borderColor: UIColor? {
         set {
             layer.borderColor = newValue!.cgColor
         }
@@ -39,7 +38,7 @@ class ZJShadowButton: UIButton {
     }
     
     /* The view border. Defaults to 0. Animatable. */
-    @IBInspectable public var borderWidth: CGFloat {
+    @IBInspectable open var borderWidth: CGFloat {
         set {
             layer.borderWidth = newValue
         }
@@ -48,10 +47,7 @@ class ZJShadowButton: UIButton {
         }
     }
     
-    /* The color of the shadow. Defaults to opaque black. Colors created
-     * from patterns are currently NOT supported. Animatable. */
-    @IBInspectable
-    open var shadowColor: UIColor? {
+    @IBInspectable open var shadowColor: UIColor? {
         set {
             layer.shadowColor = newValue!.cgColor
             clipsToBounds = false
@@ -69,8 +65,7 @@ class ZJShadowButton: UIButton {
     }
     
     /* The shadow offset. Defaults to (0, -3). Animatable. */
-    @IBInspectable
-    open var shadowOffset: CGPoint {
+    @IBInspectable open var shadowOffset: CGPoint {
         set {
             layer.shadowOffset = CGSize(width: newValue.x, height: newValue.y)
         }
@@ -81,8 +76,7 @@ class ZJShadowButton: UIButton {
     
     /* The opacity of the shadow. Defaults to 0. Specifying a value outside the
      * [0,1] range will give undefined results. Animatable. */
-    @IBInspectable
-    open var shadowOpacity: Float {
+    @IBInspectable open var shadowOpacity: Float {
         set {
             layer.shadowOpacity = newValue
         }
@@ -92,8 +86,7 @@ class ZJShadowButton: UIButton {
     }
     
     /* The blur radius used to create the shadow. Defaults to 3. Animatable. */
-    @IBInspectable
-    open var shadowRadius: CGFloat {
+    @IBInspectable open var shadowRadius: CGFloat {
         set {
             layer.shadowRadius = newValue
         }

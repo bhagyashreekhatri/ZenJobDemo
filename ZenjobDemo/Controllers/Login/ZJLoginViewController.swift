@@ -14,8 +14,6 @@ class ZJLoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     let presenter = LoginPresenter(loginService: LoginService())
-    var username:String?
-    var password:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,16 +31,16 @@ class ZJLoginViewController: UIViewController {
     
     //MARK: Validation
     func loginValidations(){
-        if let name = username,name.isEmpty{
+        if let name = userNameTextField.text,name.isEmpty{
             showError(errorMessage: "Enter User Name")
         }
         
-        else if let passcode = password,passcode.isEmpty{
+        else if let passcode = passwordTextField.text,passcode.isEmpty{
             showError(errorMessage: "Enter Password")
         }
-            
+           
         else{
-            presenter.loginAPI(userName: "mobile@zenjob.com", password: "becreative")
+            presenter.loginAPI(userName: userNameTextField.text!, password: passwordTextField.text!)
         }
     }
     
@@ -82,14 +80,6 @@ extension ZJLoginViewController: LoginView {
 
 //MARK: - UITextField Delegates
 extension ZJLoginViewController:UITextFieldDelegate {
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if let name = userNameTextField.text{
-            username = name
-        }
-        if let passcode = passwordTextField.text{
-            password = passcode
-        }
-    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
