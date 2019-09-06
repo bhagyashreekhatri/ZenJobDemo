@@ -54,6 +54,7 @@ class ZJOfferDetailViewController: UIViewController {
         locationLabel.text = String.emptyIfNil(offerDetails?.locationDict[0].locationName)
         districtLabel.text = String.emptyIfNil(offerDetails?.locationDict[0].district)
         addressLabel.text = String.emptyIfNil(offerDetails?.locationDict[0].locationName) + " , " + String.emptyIfNil(offerDetails?.locationDict[0].streetNumber) + " , " + String.emptyIfNil(offerDetails?.locationDict[0].street) + " , " + String.emptyIfNil(offerDetails?.locationDict[0].city) + " , " + String.emptyIfNil(offerDetails?.locationDict[0].district) + " , " + String.emptyIfNil(offerDetails?.locationDict[0].postalCode)
+        descriptionLabel.text = String.emptyIfNil(offerDetails?.description)
         
     }
     

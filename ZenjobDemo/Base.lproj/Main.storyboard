@@ -249,7 +249,7 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 $ per studente dsdsadasdsad sdasdsadsadasd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldn-Mw-efO">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_HOURLY WAGES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldn-Mw-efO">
                                                                 <rect key="frame" x="16" y="60" width="283.5" height="21"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="21" id="REO-Gc-mpx"/>
@@ -641,7 +641,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdsadsadsd" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxY-2e-DlH">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_ADDRESS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxY-2e-DlH">
                                                         <rect key="frame" x="17" y="571" width="287" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="SNi-3O-TJM"/>
@@ -659,7 +659,7 @@
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dsafdsfdsfdsf" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hb-d6-VMP">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_DESC" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hb-d6-VMP">
                                                         <rect key="frame" x="17" y="665.5" width="287" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="poS-MW-I1L"/>
@@ -995,8 +995,8 @@
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ws9-30-qMS" customClass="ZJGradientView" customModule="ZenjobDemo" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="-2" width="291" height="131"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="84 $$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnR-TM-gQ2">
-                                                                                    <rect key="frame" x="16" y="17" width="47" height="20"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_MONTHLY WAGES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnR-TM-gQ2">
+                                                                                    <rect key="frame" x="16" y="17" width="181" height="20"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="20" id="4tj-LR-jOp"/>
                                                                                     </constraints>
@@ -1004,8 +1004,8 @@
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10,50$$ pro Stunde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uax-sd-JIS">
-                                                                                    <rect key="frame" x="16" y="39" width="96" height="12"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_HOURLY WAGES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uax-sd-JIS">
+                                                                                    <rect key="frame" x="16" y="39" width="104.5" height="12"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="12" id="9hn-ra-xVF"/>
                                                                                     </constraints>
@@ -1013,8 +1013,8 @@
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dfdsfdsfdsfdsfsdafdsfdsfdsfdasfdsfdsfsdfsdfdsaf fddfdsfsdf34ererenbvnbvn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBT-UU-DaE">
-                                                                                    <rect key="frame" x="16" y="84" width="253.5" height="38"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_TITLE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBT-UU-DaE">
+                                                                                    <rect key="frame" x="16" y="84" width="64.5" height="38"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="38" id="B89-5c-4d1"/>
                                                                                     </constraints>
@@ -1054,13 +1054,13 @@
                                                                                 <constraint firstAttribute="height" constant="10" id="zch-hV-lRK"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berlin" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1N-FP-I81">
-                                                                            <rect key="frame" x="31" y="140.5" width="35.5" height="14.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_LOCATION" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1N-FP-I81">
+                                                                            <rect key="frame" x="31" y="140.5" width="94" height="14.5"/>
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kreuzberg" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCp-jc-pqL">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_DISTRICT" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCp-jc-pqL">
                                                                             <rect key="frame" x="164" y="139" width="112" height="16"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="16" id="HDm-Dx-tN7"/>
@@ -1087,7 +1087,7 @@
                                                                                 <constraint firstAttribute="width" constant="10" id="OQ9-g5-MxM"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri.24.08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc2-V5-gOW">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc2-V5-gOW">
                                                                             <rect key="frame" x="32" y="180" width="106" height="15"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="15" id="3Lb-R1-Xrn"/>
@@ -1103,7 +1103,7 @@
                                                                                 <constraint firstAttribute="height" constant="16" id="NhW-xu-RuI"/>
                                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="kVa-0z-RmX"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -1124,8 +1124,8 @@
                                                                                 <constraint firstAttribute="height" constant="10" id="J8A-SN-cdw"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri.24.08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-Vd-R5o">
-                                                                            <rect key="frame" x="32" y="218" width="56" height="16"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAR_DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YF-Vd-R5o">
+                                                                            <rect key="frame" x="32" y="218" width="62.5" height="16"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="16" id="QjT-ri-YF2"/>
                                                                             </constraints>
@@ -1134,7 +1134,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="19:00 - 22:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jls-ln-UeR">
-                                                                            <rect key="frame" x="143" y="218" width="133" height="16"/>
+                                                                            <rect key="frame" x="149.5" y="218" width="126.5" height="16"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="16" id="xRz-a4-RXu"/>
                                                                             </constraints>
@@ -1343,12 +1343,12 @@
     <resources>
         <image name="clockIcon" width="12" height="12"/>
         <image name="closeIcon" width="51.200000762939453" height="51.200000762939453"/>
-        <image name="exploreIcon" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="jobsIcon" width="24" height="24"/>
+        <image name="exploreIcon" width="12" height="12"/>
+        <image name="jobsIcon" width="12" height="12"/>
         <image name="locationIcon" width="12" height="12"/>
         <image name="passwordIcon" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="profileIcon" width="24" height="24"/>
-        <image name="taskIcon" width="24" height="24"/>
+        <image name="profileIcon" width="12" height="12"/>
+        <image name="taskIcon" width="12" height="12"/>
         <image name="userIcon" width="25.600000381469727" height="25.600000381469727"/>
     </resources>
 </document>
